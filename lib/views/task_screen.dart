@@ -68,7 +68,7 @@ class TasksView extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {
-                 // var isDone = task.isDone;
+                  // var isDone = task.isDone;
                   BlocProvider.of<TaskBloc>(context).add(TaskToggleEvent(
                       title: task.title,
                       timeStamp: task.timeStamp,
@@ -76,7 +76,6 @@ class TasksView extends StatelessWidget {
                       index: index));
                   print(task.isDone);
                 },
-
                 icon: Icon(
                   task.isDone
                       ? Icons.check_box_outlined
@@ -104,19 +103,6 @@ class TasksView extends StatelessWidget {
               )
             ],
           ),
-          // onTap: () {
-          //   task.isDone = !task.done;
-          //   _box!.putAt(
-          //     _index,
-          //     task.toMap(),
-          //   );
-          //   setState(() {});
-          // },
-          // onLongPress: () {
-          //   setState(() {
-          //     _box!.deleteAt(_index);
-          //   });
-          // },
         );
       },
     );

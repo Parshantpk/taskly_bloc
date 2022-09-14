@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     BlocProvider.of<TaskBloc>(context).add(TaskInitialEvent());
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      title: 'Taskly Bloc',
+      theme: ThemeData(primarySwatch: Colors.red),
       home: const TaskScreen(),
     );
   }
