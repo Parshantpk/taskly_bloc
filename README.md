@@ -1,4 +1,4 @@
-# task_bloc
+# taskly_bloc
 
 Taskly App rebuild with Bloc State Managment
 
