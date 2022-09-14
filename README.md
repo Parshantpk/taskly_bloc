@@ -1,6 +1,6 @@
 # task_bloc
 
-A new Flutter project.
+Taskly App rebuild with Bloc State Managment
 
 ## Getting Started
 
